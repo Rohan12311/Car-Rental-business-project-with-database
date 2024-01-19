@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/images/car/car.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #1e1d1d;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.929);
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

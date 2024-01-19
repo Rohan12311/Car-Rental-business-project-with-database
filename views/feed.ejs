@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="/images/home page/LOGO.jpg" alt="Logo of web" id="Logo">
+    <a href="register"><button id="Sign">Sign in</button></a>
+</header>
+<!--  -->
+<main>
+    <div id="frontImage">
+        <img id="image" src="/images/home page/home.jpg" alt="">
+        <h1 id="slo1">Rent a Car in Mumbai</h1>
+        <h2 id="slo2"> book your drive now</h2>
+    </div>
+    <div class="part">
+        <% user.Car.forEach(function(car){ %>
+          <div class="car">
+            <img src="/images/uploads/<%= car.image %>" id="carImage"></img>
+            <h4 class="name"><%= car.imageText %></h4>
+            <div class="seats">
+                <img class="Seicon" src="/images/home page/car-chair.png"></img>
+                <h4 class="Sename">5 Seats</h4>
+            </div>
+            <div class="speed">
+                <img class="Micon" src="/images/home page/speed.png"></img>
+                <h4 class="Mname">5.2 Kmpl</h4>
+            </div>
+            <div class="type">
+                <img class="Tyicon" src="/images/home page/fuel-pump.png" alt="">
+                <h4 class="Tyname">Diesel</h4>
+            </div>
+            <div class="Manul" id="man1">
+                <img class="Maicon" src="/images/home page/steering-wheel.png" alt="">
+                <h4 class="Maname">Manual</h4>
+            </div>
+            <div class="line"></div>
+            <h4 class="price">From ₹300/hr</h4>
+            <a href="./form"><button class="rent">Rent Now</button></a>
+          </div>
+        <%}) %>
+    </div>
+    <div id="Why">
+        <h4 class="us">Why<br>choose<br>Us</h4>
+    </div>
+    <div id="lable">
+        <div id="secure">
+            <img src="/images/home page/earning.svg" alt="secure" id="lable-part1">
+            <div id="infor1">
+                <h4 class="content">Accessible<br>There’s always a Zoomcar near you</h4>
+
+            </div>
+        </div>
+        <div id="convinet">
+            <img src="/images/home page/flexibility.svg" alt="convinet" id="lable-part2">
+            <div id="infor2">
+                <h4 class="content">Secure<br>Pay 0 security deposit, get unlimited KMs</h4>
+            </div>
+        </div>
+        <div id="Accessible">
+            <img src="/images/home page/repair.svg" alt="Accessible" id="lable-part3">
+            <div id="infor3">
+                <h4 class="content">Convenient<br>From Hatchbacks to SUVs, choose from 25,000+ cars</h4>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <Div class="foot">
+        <h3>About Us</h3>
+        <div class="first">
+            <h4>Carrers</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Terms and Service</h4>
+            <h4>Investor Relations</h4>
+        </div>
+    </Div>
+    <Div class="foot" >
+        <h3>Quick Links</h3>
+        <div class="second">
+            <h5><a href="/">Home</a></h5>
+            <h5><a href="/FrontPage">Front</a></h5>
+            <h5><a href="#Services">Users</a></h5>
+            <!-- <h5><a href="#">Profiles</a></h5> -->
+        </div>
+    </Div>
+    <Div class="foot">
+        <h3>Contact Us</h3>
+        <div class="third">
+            <h6><i class='bx bxs-envelope-open' style='color:#3290f2' ></i>
+                <a href="mailTo:"> Email</a></h6>
+            <h6><i class='bx bx-phone-call' style='color:#0c0c0d'  ></i>
+                <a href="tel:"> Phone</a></h6>
+            <h6><i class='bx bxl-whatsapp-square' style='color:#1ae363'></i>
+                <a href=""> Whatsapp</a></h6>
+            <h6><i class='bx bxl-twitter' style='color:#2962ff'  ></i>
+                <a href=""> Twitter</a></h6>
+        </div>
+    </Div>
+</footer>
+</body>
+</html>
